@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var glob = require("glob-all")
+var glob = require("glob-all");
 
 
 module.exports = [
