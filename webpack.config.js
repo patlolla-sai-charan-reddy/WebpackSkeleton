@@ -136,6 +136,29 @@ module.exports = [
 	        	}
 			]
 		},
+	},
+
+	//For finding errors in ES6 JavaScript
+	{
+		entry: './eslint/es6-eslint.js',
+
+		output: {
+			filename: '[name]'
+		},
+
+        module: {
+            loaders: [
+                {
+                    enforce: "pre",
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    loader: "eslint-loader",
+                    options: {
+                        emitWarning: true,
+                    },
+                },
+            ]
+        }
 	}
 
 ]
