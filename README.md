@@ -71,3 +71,17 @@ module.exports = [<br />
 }<br />
 
 ]<br />
+
+# Step 5
+
+Type webpack in temrinal to build the modules
+
+<br />
+
+Enter webpack-dev-server to run the server, basically to leverage the livereload
+
+<br />
+
+#### You can see the output at localhost:8080
+
+
