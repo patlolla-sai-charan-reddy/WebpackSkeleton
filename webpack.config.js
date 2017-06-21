@@ -1,8 +1,10 @@
+
 var webpack = require('webpack');
 var path = require('path');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var glob = require("glob-all");
+
 
 module.exports = [
 	
@@ -18,20 +20,20 @@ module.exports = [
 		},
 
 		module: {
-      loaders: [
-        {
-	        test: /\.scss$/,
-	        loaders: ExtractTextPlugin.extract({
-	          use: ['css-loader', 'resolve-url-loader', 'sass-loader']
-	        })
-    		},
-  		]
+	        loaders: [
+		        {
+			        test: /\.scss$/,
+			        loaders: ExtractTextPlugin.extract({
+			          	use: ['css-loader', 'resolve-url-loader', 'sass-loader']
+			        })
+		    	},
+	    	]
 		},
 
 		plugins:[
 			new ExtractTextPlugin({ // define where to save the file
-        filename: '[name]'
-	    })
+	            filename: '[name]'
+	        })
 		]
 	},
 
@@ -70,22 +72,22 @@ module.exports = [
 			filename: '[name]'
 		},
 
-    module: {
+	    module: {
 	    loaders: [
-        {
-          test: /\.css$/i,
-          use: ExtractTextPlugin.extract({
-            use: {
-                loader: 'css-loader',
-                options: {
-                    minimize: true,
-                    beautify: true
-                }
-            }
-          })
-        }
-    	],
-    },
+		        {
+		            test: /\.css$/i,
+		            use: ExtractTextPlugin.extract({
+		                use: {
+		                    loader: 'css-loader',
+		                    options: {
+		                        minimize: true,
+		                        beautify: true
+		                    }
+		                }
+		            })
+		        }
+	    	],
+	    },
 
 		plugins: [
 			new UglifyJSPlugin({
@@ -93,8 +95,9 @@ module.exports = [
 				beautify: true
 			}),
 			new ExtractTextPlugin({ // define where to save the file
-          filename: 'minify/minify.min.css'
-      }),
+	            filename: 'minify/minify.min.css'
+	        }),
+
 		]
 	},
 
@@ -112,26 +115,27 @@ module.exports = [
 					test: /\.js$/,
 					loader: 'jshint-loader',
 					exclude: /node_modules/,
-          options: {
-            "esversion": 6,
-            "jquery": true,
-            "strict": false,
-            "shadow": true,
-            globals: {
-                "jQuery": true,
-                "$": true,
-                "React":true,
-                "ReactDOM":true,
-                "Cookies": true,
-                "curly": true,
-                "eqeqeq": true,
-                "eqnull": true,
-                "forin": true,
-                "browser": true,
-            }
-          },
-    		}
+		            options: {
+		                "esversion": 6,
+		                "jquery": true,
+		                "strict": false,
+		                "shadow": true,
+		                globals: {
+		                    "jQuery": true,
+		                    "$": true,
+		                    "React":true,
+		                    "ReactDOM":true,
+		                    "Cookies": true,
+		                    "curly": true,
+		                    "eqeqeq": true,
+		                    "eqnull": true,
+		                    "forin": true,
+		                    "browser": true,
+		                }
+		            },
+	        	}
 			]
 		},
 	}
+
 ]
