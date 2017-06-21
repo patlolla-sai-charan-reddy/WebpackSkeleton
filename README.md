@@ -41,7 +41,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');<br />
 <br />
 
 # Step 4
-To simpilify the webpack, I will make module.exports as array and create multiple objects inside it.<br />
+To simplify the webpack, I have written module.exports as array and create multiple objects inside it.<br />
 
 module.exports = [<br />
 
