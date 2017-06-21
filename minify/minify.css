@@ -1,0 +1,24 @@
+/*... Import css from css folder ...*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: black;
+    color: #555;
+    font-family: 'Lato', 'Arial';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.thanks {
+    color: red;
+    margin-top: 25px;
+}
