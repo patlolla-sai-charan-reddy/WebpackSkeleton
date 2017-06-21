@@ -4,11 +4,11 @@ This repo holds Webpack skeleton, which has pretty much every functionality that
 Steps to Reproduce the repo:
 
 # Step 1
-(sudo is to run as admin, I am not sure but I think windows user can ignore that part)
-sudo npm i webpack webpack-dev-server --save-dev -g
-sudo npm i babel babel-core babel-loader babel-preset-es2015 --save-dev
-sud0 npm i react react-dom --save-dev
-sudo npm install babel-core babel-loader jshint jshint-loader node-libs-browser babel-preset-es2015 babel-preset-react webpack  --save-dev
+(sudo is to run as admin, I am not sure but I think windows user can ignore that part)\n
+sudo npm i webpack webpack-dev-server --save-dev -g\n
+sudo npm i babel babel-core babel-loader babel-preset-es2015 --save-dev\n
+sud0 npm i react react-dom --save-dev\n
+sudo npm install babel-core babel-loader jshint jshint-loader node-libs-browser babel-preset-es2015 babel-preset-react webpack  --save-dev\n
 sudo npm install babel-loader eslint-loader uglifyjs-webpack-plugin extract-text-webpack-plugin css-loader sass-loader resolve-url-loader copy-webpack-plugin glob-all --save-dev
 
 # Step 2
