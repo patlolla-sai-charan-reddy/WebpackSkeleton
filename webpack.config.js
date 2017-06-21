@@ -73,7 +73,7 @@ module.exports = [
 		},
 
 	    module: {
-	    loaders: [
+		    loaders: [
 		        {
 		            test: /\.css$/i,
 		            use: ExtractTextPlugin.extract({
@@ -137,5 +137,4 @@ module.exports = [
 			]
 		},
 	}
-
 ]
