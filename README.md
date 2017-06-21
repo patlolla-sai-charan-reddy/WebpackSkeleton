@@ -14,7 +14,7 @@ sudo npm i react react-dom --save-dev<br />
 <br />
 sudo npm install babel-core babel-loader jshint jshint-loader node-libs-browser babel-preset-es2015 babel-preset-react webpack  --save-dev<br />
 <br />
-sudo npm install babel-loader eslint-loader uglifyjs-webpack-plugin extract-text-webpack-plugin css-loader sass-loader resolve-url-loader copy-webpack-plugin glob-all --save-dev<br />
+sudo npm install babel-loader eslint-loader uglifyjs-webpack-plugin extract-text-webpack-plugin css-loader node-sass sass-loader resolve-url-loader copy-webpack-plugin glob-all --save-dev<br />
 <br />
 
 # Step 2
