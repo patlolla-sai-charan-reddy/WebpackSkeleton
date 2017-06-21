@@ -3,7 +3,7 @@ This repo holds Webpack skeleton, which has pretty much every functionality that
 
 Steps to Reproduce the repo:<br />
 
-### (sudo is to run as admin, I am not sure but I think windows user can ignore that part)<br />
+#### sudo is to run as admin, windows user can ignore that part<br />
 
 # Step 1
 sudo npm i webpack webpack-dev-server --save-dev -g<br />
