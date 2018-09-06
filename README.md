@@ -82,3 +82,4 @@ Enter "webpack-dev-server" to run the server, basically to leverage the liverelo
 #### You can see the output at localhost:8080
 
 
+[![CircleCI](https://circleci.com/gh/scrpatlolla/SaiCharanPatlolla-Portfolio/tree/master.svg?style=svg)](https://circleci.com/gh/scrpatlolla/SaiCharanPatlolla-Portfolio/tree/master)
