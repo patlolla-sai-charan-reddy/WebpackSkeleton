@@ -7,11 +7,8 @@ var glob = require("glob-all");
 
 
 module.exports = [
-	
-	//For Compiling SCSS to CSS
 	{
 		entry: {
-			//output : input
 			'css/after.css': './scss/before.scss'
 		},
 
@@ -36,8 +33,6 @@ module.exports = [
 	        })
 		]
 	},
-
-	//For Transpiling ES6 to ES5
 	{
 		entry:{
 			'es5/after.js': './es6/before.js'
@@ -100,8 +95,6 @@ module.exports = [
 
 		]
 	},
-
-	//For finding errors in JavaScript Files (JSHINT)
 	{
 		entry: './jshint/jshint.js',
 
